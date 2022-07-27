@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global scop</title>
+</head>
+<body>
+    <script> 
+    
+    function Sumation(firstNum,scndName){
+        result = firstNum+scndName;
+        function multiply(newNum){
+            return result*newNum;
+        }
+        return result;
+    }
+
+
+    // testing before function call 
+    // console.log(result);
+
+    Sumation(1,2);
+    // testing after function call
+    console.log(result);
+
+    //calling multiply function
+    // console.log(multiply(3));
+
+    //global scop
+    const globalVar = window.result;
+    console.log(globalVar);
+
+
+
+    </script>
+</body>
+</html>
